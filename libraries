@@ -1,11 +1,14 @@
-# Main Libraries
-import numpy as np
-import pandas as pd
-import librosa
-import librosa.display
+from ultralytics import YOLO
+import cv2
 import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow.keras import layers, models
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix
-import seaborn as sns  # optional, for visualization
+
+model = YOLO('yolov8n.pt')
+from ultralytics import YOLO
+import cv2
+import numpy as np
+import time
+import os
+model = YOLO("yolov8n.pt")
+if not os.path.exists("violations"):
+    os.makedirs("violations")
+cap = cv2.VideoCapture(0)
