@@ -1,2 +1,3 @@
-# AI-Based-Vehicle-Sound-Diagnostics-System
-"AI-based vehicle sound diagnostic system using Python and ML to detect engine or brake faults from audio signals with MFCC and neural networks."
+# AI-Based Vehicle Overloading and Safety Violation Detection System
+"An AI-powered system using object detection to identify vehicle overloading, missing helmets, and seatbelt violations in real time, enhancing road safety through automated monitoring.
+"
