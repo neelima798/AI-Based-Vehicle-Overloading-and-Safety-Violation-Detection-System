@@ -23,30 +23,3 @@
   </div>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Detection Results</title>
-  <style>
-    body { font-family: Arial; background-color: #eef1f5; text-align: center; }
-    h1 { color: #2c3e50; margin-top: 40px; }
-    img { width: 400px; margin: 15px; border-radius: 10px; box-shadow: 0 0 10px gray; }
-    a { display: inline-block; margin-top: 30px; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 5px; text-decoration: none; }
-    a:hover { background-color: #0056b3; }
-  </style>
-</head>
-<body>
-  <h1>Detected Violations</h1>
-  {% if images %}
-    {% for img in images %}
-      <img src="{{ url_for('static', filename='violations/' + img) }}">
-    {% endfor %}
-  {% else %}
-    <p>No violations detected.</p>
-  {% endif %}
-  <br><br>
-  <a href="/">⬅ Back to Home</a>
-</body>
-</html>
